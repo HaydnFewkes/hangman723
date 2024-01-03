@@ -14,3 +14,6 @@ class Hangman:
                 self.repeat_letters.append(letter)
         self.num_letters = len(self.repeat_letters)
         self.list_of_guesses = []
+
+game = Hangman(["apple"])
+print(game.word, game.word_guessed, game.num_letters, game.list_of_guesses)
