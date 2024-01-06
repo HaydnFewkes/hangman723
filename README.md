@@ -5,3 +5,4 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 
 Milestone_2: chooses a random word from a given list
 Milestone_3: Takes a userinput and checks the sinlge letter against a word
+Milestone_4: Added the class with the functions: check_guess, ask_for_input. Creates most of the backbone of the game.

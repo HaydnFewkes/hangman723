@@ -22,6 +22,7 @@ class Hangman:
         if guess in self.word:
             print("Good guess! ("+guess+") is in the word.")
             index = 0
+            # Changes the list of the word guessed to show where the letter appeared
             for letter in self.word:
                 if letter == guess:
                     self.word_guessed[index] = guess
