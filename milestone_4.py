@@ -21,8 +21,17 @@ class Hangman:
         guess = guess.lower()
         if guess in self.word:
             print("Good guess! ("+guess+") is in the word.")
+            index = 0
+            for letter in self.word:
+                if letter == guess:
+                    self.word_guessed[index] = guess
+                index += 1
+            self.num_letters -= 1
+            print(self.word_guessed)
         else:
             print("Sorry, ("+guess+") is not in the word. Try again.")
+            self.num_lives -= 1
+            print("You have "+str(self.num_lives)+" lives left.")
 
     # Function that takes the user input and makes sure its a single letter, then checks if its in the word
     def ask_for_input(self):
